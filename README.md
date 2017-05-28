@@ -14,6 +14,7 @@ You'll first need to configure your Raspberry Pi to boot an OS, connect to your 
 
 ```bash
 ssh my-pi-hostname # SSH into your Raspberry Pi
+sudo apt-get install sqlite3
 git clone git@github.com:tlhunter/powerbox.git
 cd powerbox
 npm install
