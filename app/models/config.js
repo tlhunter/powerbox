@@ -156,9 +156,9 @@ module.exports.banks.get = (bank_id, callback) => {
 module.exports.banks.set = (bank_id, data, callback) => {
   if (!db) return void setImmediate(() => callback(new Error("Database is not initialized")));
 
-  if (!data.name || !data.pins || !data.schedule) {
+  if (!data.name || !data.pins || !data.schedule || !data.duration) {
     return void setImmediate(() => callback(
-      new Error("Must provide .name, .pins, and .schedule")
+      new Error("Must provide .name, .pins, .duration, and .schedule")
     ));
   }
 
@@ -171,10 +171,11 @@ module.exports.banks.set = (bank_id, data, callback) => {
   // Convert array of pins into a string
   data.pins = data.pins.join(',');
 
-  const query = "UPDATE banks SET schedule = $schedule, name = $name, pins = $pins WHERE id = $id";
+  const query = "UPDATE banks SET schedule = $sched, duration = $dur, name = $name, pins = $pins WHERE id = $id";
 
   const obj = {
-    $schedule: data.schedule,
+    $sched: data.schedule,
+    $dur: data.duration,
     $name: data.name,
     $pins: data.pins,
     $id: bank_id

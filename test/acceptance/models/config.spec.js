@@ -80,7 +80,8 @@ test('Getting a valid bank', (t) => {
       id: 1,
       name: 'Left Bank',
       pins: [1, 2],
-      schedule: '* * * * * *'
+      schedule: '* * * * * *',
+      duration: 0
     });
     t.end();
   });
@@ -93,11 +94,12 @@ test('Setting a valid keyval', (t) => {
   });
 });
 
-test('getting a valid bank', (t) => {
+test('Setting a valid bank', (t) => {
   const data = {
     schedule: '0 0 0 0 0 0',
     name: 'Bank One',
-    pins: [9, 10]
+    pins: [9, 10],
+    duration: 60
   };
 
   model.banks.set(1, data, (error) => {
@@ -123,7 +125,8 @@ test('Should update bank data', (t) => {
       id: 1,
       name: 'Bank One',
       pins: [9, 10],
-      schedule: '0 0 0 0 0 0'
+      schedule: '0 0 0 0 0 0',
+      duration: 60
     });
     t.end();
   });
