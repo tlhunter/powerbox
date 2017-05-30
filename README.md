@@ -26,7 +26,9 @@ Then you can visit http://my-pi-hostname and configure the schedule.
 
 ## Schematic
 
-TODO
+Here's a crude drawing of the schematic for this project. Basically the wires on the right are all thick AC wiring. The ones on the left are thin DC wiring.
+
+![Schematic](pictures/schematic.png)
 
 ## Assembley Instructions
 
@@ -47,8 +49,10 @@ You'll need to buy these from the internet or a specialty electronics/hobby shop
 
 These you can buy pretty cheaply from a local hardware store.
 
+* [6" USB Micro B Cable](http://amzn.to/2qvXbZB) - Shorter is better
+* [Small AC to USB Adapter](http://amzn.to/2qvT9AB) - Smaller and more amps is better
 * Tools: Wirecutter, Large and Medium Flathead, Solder gun
-* [Assorted Wirenuts](http://amzn.to/2rd8FEs)
+* [Assorted Wirenuts](http://amzn.to/2rd8FEs) - For connecting thick AC wire
 * 2 x Wall Outlets
 * Power cord (I cannibalized a cheap powerstrip)
 * Low Voltage and High Voltage wire
