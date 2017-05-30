@@ -22,7 +22,7 @@ npm install -g forever
 sudo PORT=80 forever start powerbox.js
 ```
 
-Then you can visit http://my-pi-hostname and configure the schedule.
+Then you can visit http://my-pi-hostname to configure the scheduler.
 
 ## Schematic
 
@@ -32,7 +32,11 @@ Here's a crude drawing of the schematic for this project. Basically the wires on
 
 ## Assembley Instructions
 
-TODO
+**Warning**: Don't undertake this process if you're not familiar with the basics of electronics. Don't perform any work or touch any circuitry while the device is plugged in. If you fail to properly insulate any wires your Powerbox may short out and burn down your house.
+
+I build this project entirely while at [Noisebridge](https://www.noisebridge.net/), which is a friendly San Francisco hackerspace. Having access to tools and raw materials is much easier than having to buy assorted wires and screws.
+
+TODO: Write instructions
 
 ## Parts
 
@@ -45,7 +49,7 @@ You'll need to buy these from the internet or a specialty electronics/hobby shop
 * 6 x [Double Female Jumpers](http://amzn.to/2qsEAxx)
 * [Header Pins](http://amzn.to/2rcUtLR)
 
-### Hardware Store Parts
+### Generic Parts
 
 These you can buy pretty cheaply from a local hardware store.
 
